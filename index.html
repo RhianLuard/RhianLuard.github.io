@@ -75,7 +75,7 @@
       <div class="chart-description"> <!-- we are grouping the title and description together so we can style them together -->
           <h2>Chart 3: Global GDP</h2>
           <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-              New chart added.
+              
           </p>
       </div>
       <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -85,7 +85,7 @@
     <div class="chart-description"> <!-- we are grouping the title and description together so we can style them together -->
         <h2>Chart 4: Interactive Chart</h2>
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            New chart added.
+            
         </p>
     </div>
     <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -95,7 +95,7 @@
   <div class="chart-description"> <!-- we are grouping the title and description together so we can style them together -->
       <h2>Chart 5: Housing</h2>
       <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-          New chart added.
+          
       </p>
   </div>
   <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -131,6 +131,15 @@
   <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 </section>
 
+<section>
+  <div class="chart-description">
+      <h2>Chart 8: Price of Beer</h2>
+      <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+          
+      </p>
+  </div>
+  <figure id="Location8"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
         <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
@@ -148,6 +157,7 @@
         var figure_5_spec = "housing.json"; // We're storing the URL of the graph we want to display in a variable
         var figure_6_spec = "UKpop.json"; // We're storing the URL of the graph we want to display in a variable
         var figure_7_spec = "unemploy.json"; // We're storing the URL of the graph we want to display in a variable
+        var figure_8_spec = "beer.json"; // We're storing the URL of the graph we want to display in a variable
 
       
 
@@ -159,6 +169,7 @@
         vegaEmbed('#Location5', figure_5_spec)
         vegaEmbed('#Location6', figure_6_spec)
         vegaEmbed('#Location7', figure_7_spec)
+        vegaEmbed('#Location8', figure_8_spec)
 
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
