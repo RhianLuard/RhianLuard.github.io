@@ -1,0 +1,17 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/RhianLuard/RhianLuard.github.io/main/pesticides%20data.csv"},
+
+    "title": {"text": "Pesticides"},
+
+    "width":300,
+    "height":300,
+
+    "mark":{"type": "line","color":"red"},
+ 
+    "encoding": {
+      "x": {"field": "suryear","type": "temporal"},
+      "y": {"field": "kg","type": "quantitative"}
+    }
+}
